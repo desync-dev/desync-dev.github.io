@@ -1,7 +1,12 @@
+---
+layout: page
+title: desync.dev
+---
 <div style="display: flex;">
     <img src="/desync.png" alt="desync" style="max-width: 256px; max-height: 256px; margin-right: 10px;">
     <img src="/3desync.png" alt="3desync" style="max-width: 256px; max-height: 256px;">
 </div>
+
 
 **📞 Contact**
 
