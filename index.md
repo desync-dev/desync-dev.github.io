@@ -1,4 +1,7 @@
-![desync](/desync.png) ![3desync](/3desync.png)
+<div style="display: flex;">
+    <img src="/desync.png" alt="desync" style="max-width: 256px; max-height: 256px; margin-right: 10px;">
+    <img src="/3desync.png" alt="3desync" style="max-width: 256px; max-height: 256px;">
+</div>
 
 **📞 Contact**
 
