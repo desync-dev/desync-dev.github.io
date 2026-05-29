@@ -96,14 +96,28 @@
 		}
 		.brand .name b { color: var(--red); font-weight: 600; }
 
+		.tagline {
+			color: var(--muted);
+			margin: 0;
+		}
+		.tagline .cursor {
+			display: inline-block;
+			width: 8px;
+			height: 1em;
+			background: var(--red);
+			vertical-align: -2px;
+			margin-left: 2px;
+		}
+
 		/* ASCII box-drawing divider */
 		.rule {
 			color: var(--faint);
 			white-space: nowrap;
 			overflow: hidden;
 			user-select: none;
-			margin: 22px 0 14px;
+			margin: 22px 0;
 			font-size: 13px;
+			line-height: 1;
 		}
 
 		.label {
@@ -151,6 +165,8 @@
 			<img src="desync.png" alt="desync logo">
 			<span class="name"><b>de</b>sync</span>
 		</div>
+
+		<p class="tagline">software development.<span class="cursor"></span></p>
 
 		<div class="rule">├─────────────────────────────────────────────┤</div>
 
