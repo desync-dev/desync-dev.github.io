@@ -174,7 +174,7 @@
 		<div class="rows">
 			<div class="row">
 				<span class="k">email</span>
-				<span class="v"><a href="mailto:thijs@desync.dev">thijs@desync.dev</a></span>
+				<span class="v"><a href="#contact" class="email" data-e="4b3f232221380b2f2e38322528652f2e3d">[email&#160;protected]</a></span>
 			</div>
 		</div>
 
@@ -189,5 +189,19 @@
 
 		<footer>© desync.dev · Netherlands</footer>
 	</main>
+
+	<script>
+		document.querySelectorAll("a.email[data-e]").forEach(function (a) {
+			var e = a.getAttribute("data-e");
+			var key = parseInt(e.substr(0, 2), 16);
+			var addr = "";
+			for (var i = 2; i < e.length; i += 2) {
+				addr += String.fromCharCode(parseInt(e.substr(i, 2), 16) ^ key);
+			}
+			a.href = "mailto:" + addr;
+			a.textContent = addr;
+			a.removeAttribute("data-e");
+		});
+	</script>
 </body>
 </html>
